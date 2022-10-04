@@ -512,7 +512,12 @@
       <div class="row">
         <div class="eight columns">
           <!-- form -->
-          <form action="" method="post" id="contactForm" name="contactForm">
+          <form
+            method="POST"
+            id="contactForm"
+            name="contactForm"
+            action="https://formspree.io/f/xknebpaa"
+          >
             <fieldset>
               <div>
                 <label for="contactName"
@@ -524,6 +529,7 @@
                   size="35"
                   id="contactName"
                   name="contactName"
+                  required
                 />
               </div>
 
@@ -537,6 +543,7 @@
                   size="35"
                   id="contactEmail"
                   name="contactEmail"
+                  required
                 />
               </div>
 
@@ -548,6 +555,7 @@
                   size="35"
                   id="contactSubject"
                   name="contactSubject"
+                  required
                 />
               </div>
 
@@ -560,15 +568,14 @@
                   rows="15"
                   id="contactMessage"
                   name="contactMessage"
+                  required
                 ></textarea>
               </div>
 
-              <div>
-                <button class="submit">Submit</button>
-                <span id="image-loader">
-                  <img alt="" src="images/loader.gif" />
-                </span>
-              </div>
+              <button class="submit" type="submit">Submit</button>
+              <span id="image-loader">
+                <img alt="" src="images/loader.gif" />
+              </span>
             </fieldset>
           </form>
           <!-- Form End -->

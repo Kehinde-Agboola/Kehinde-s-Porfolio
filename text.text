@@ -1,0 +1,189 @@
+  <section id="contact">
+      <div class="row section-head">
+        <div class="two columns header-col">
+          <h1><span>Get In Touch.</span></h1>
+        </div>
+
+        <div class="ten columns">
+          <p class="lead">Let get in touch</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="eight columns">
+          <!-- form -->
+          <form
+            id="form"
+            name="contactForm"
+            action="https://formspree.io/f/xknebpaa"
+            method="POST"
+          >
+            <fieldset>
+              <div>
+                <label for="contactName"
+                  >Name <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  value=""
+                  size="35"
+                  id="contactName"
+                  name="contactName"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="contactEmail"
+                  >Email <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  value=""
+                  size="35"
+                  id="contactEmail"
+                  name="contactEmail"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="contactSubject">Subject</label>
+                <input
+                  type="text"
+                  value=""
+                  size="35"
+                  id="contactSubject"
+                  name="contactSubject"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="contactMessage"
+                  >Message <span class="required">*</span></label
+                >
+                <textarea
+                  cols="50"
+                  rows="15"
+                  id="contactMessage"
+                  name="contactMessage"
+                  required
+                ></textarea>
+              </div>
+
+              <button class="submit" type="submit">Submit</button>
+              <span id="image-loader">
+                <img alt="" src="images/loader.gif" />
+              </span>
+            </fieldset>
+          </form>
+          <!-- Form End -->
+
+          <!-- contact-warning -->
+          <div id="message-warning">Please check Your input!</div>
+          <!-- contact-success -->
+          <div id="message-success">
+            <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+          </div>
+        </div>
+
+        <aside class="four columns footer-widgets">
+          <div class="widget widget_contact">
+            <h4>Address and Phone</h4>
+            <p class="address">
+              4, Brilla FM Street <br />
+              Bogije, Lekki <br />
+              Lagos, Nigeria.<br />
+              <span>+234 9156578730</span>
+            </p>
+          </div>
+          <div>
+            <p>Thank You</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="contain">
+      <div class="wrapper">
+        <div class="form">
+          <h4>GET IN TOUCH</h4>
+          <h2 class="form-headline">Send us a message</h2>
+          <form
+            id="submit-form"
+            action="https://formspree.io/f/xknebpaa"
+            method="POST"
+          >
+            <p>
+              <input
+                id="name"
+                class="form-input"
+                type="text"
+                placeholder="Your Name*"
+                required
+              />
+              <small class="name-error"></small>
+            </p>
+            <p>
+              <input
+                id="email"
+                class="form-input"
+                type="email"
+                placeholder="Your Email*"
+                required
+              />
+              <small class="name-error"></small>
+            </p>
+            <p class="full-width">
+              <input
+                id="company-name"
+                class="form-input"
+                type="text"
+                placeholder="Subject*"
+                required
+              />
+              <small></small>
+            </p>
+            <p class="full-width">
+              <textarea
+                minlength="20"
+                id="message"
+                cols="30"
+                rows="7"
+                placeholder="Your Message*"
+                required
+              ></textarea>
+              <!-- <small></small> -->
+            </p>
+            <p class="full-width">
+              <input
+                type="submit"
+                class="submit-btn"
+                value="Submit"
+                onclick="checkValidations()"
+              />
+              <button class="reset-btn" onclick="reset()">Reset</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
